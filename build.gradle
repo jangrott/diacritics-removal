@@ -9,8 +9,9 @@ repositories {
 }
 
 dependencies {
-    compile 'org.codehaus.groovy:groovy-all:2.4.4'
+    compile 'org.codehaus.groovy:groovy-all:2.4.4',
+            'org.apache.commons:commons-lang3:3.4'
     testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
 }
 
-mainClassName = "org.gradle.sample.Main"
+mainClassName = "pl.jangrot.diacriticsremoval.Main"
