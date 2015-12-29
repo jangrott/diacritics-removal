@@ -6,7 +6,7 @@ class DiacriticsDeleterSpec extends Specification {
 
     def "deletes diacritics"() {
         expect:
-        new DiacriticsDeleter().deleteFrom("ąęćóśźż") == "aecoszz"
+        new DiacriticsDeleter().deleteFrom("ąęćółśźżĄĘĆÓŁŚŹŻ") == "aecolszzAECOLSZZ"
     }
 
 }

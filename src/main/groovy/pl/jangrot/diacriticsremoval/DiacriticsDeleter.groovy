@@ -8,5 +8,7 @@ class DiacriticsDeleter {
 
     static deleteFrom(String string) {
         removeDiacritics(string)
+                .replaceAll("ł", "l")
+                .replaceAll("Ł", "L")
     }
 }
